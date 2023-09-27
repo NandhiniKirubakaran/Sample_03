@@ -1,0 +1,16 @@
+.carousel-item{
+    align-items: center;
+ }
+ .visually-hidden {
+     color: black;
+     font-weight: 600;
+ }
+ /* .carousel-inner{
+     align-items: center;
+ } */
+ .carousel-item img{
+     height: 500px;
+     margin: 0 auto;
+     width: 1180px;
+     padding-top: 20px;
+ }

@@ -12,7 +12,8 @@
     <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="css/tailwind.css">
     <link rel="stylesheet" href="css/tooplate-antique-cafe.css">
-    
+    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
 <!--
 
 Tooplate 2126 Antique Cafe
@@ -39,25 +40,51 @@ https://www.tooplate.com/view/2126-antique-cafe
         <div class="container mx-auto px-2 tm-intro-width">
             <div class="sm:pb-60 sm:pt-48 py-20">
                 <div class="bg-black bg-opacity-70 p-12 mb-5 text-center">
-                    <h1 class="text-white text-5xl tm-logo-font mb-5">Website Name</h1>
-                    <p class="tm-text-gold tm-text-2xl">Sub Name</p>
+                    <h1 class="text-white text-5xl tm-logo-font mb-5" id="title">Website Name</h1>
+                    
                 </div>    
                 <div class="bg-black bg-opacity-70 p-10 mb-5">
-                    <p class="text-white leading-8 text-sm font-light">
+                    <p class="text-white leading-8 text-sm font-light" id="about-section">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat itaque at neque molestias fugit, iste, nulla cumque iusto porro laboriosam consequuntur voluptatum vel! Porro dolores veritatis dolorum commodi veniam inventore.
                     	If you have any question, please <a rel="nofollow" href="https://www.tooplate.com/contact" target="_parent">send us a message</a>. </p>
                 </div>
-                <div class="text-center">
-                    <div class="inline-block">
-                        <a href="#menu" class="flex justify-center items-center bg-black bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition">
-                            <i class="fas fa-photo-video mr-3"></i>
-                            <span>Let's explore...</span>                        
-                        </a>
-                    </div>                    
-                </div>                
+                
+                <div class="container mx-auto px-2 tm-intro">
+                    <div class="text-center">
+                        <div class="inline-block">
+                            <a href="#menu" class="flex justify-center items-center bg-black  bg-opacity-70 py-6 px-8 rounded-lg font-semibold tm-text-2xl tm-text-gold hover:text-gray-200 transition ">
+                              
+    <div id="carousel">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" >
+              <img src="assests/gallery-1.jpg" class="d-block"  id="slider1"  alt="...">
             </div>
-        </div>        
-    </div>
+            <div class="carousel-item" >
+              <img src="assests/gallery-2.jpg" class="d-block " id="slider2" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="assests/gallery-3.jpg" class="d-block" id="slider3" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden"><i class="fa fa-chevron-left" aria-hidden="true"></i></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden"><i class="fa fa-chevron-right" aria-hidden="true"></i></span>
+          </button>
+        </div>
+      </div>               
+                            </a>
+                        </div>                    
+                    </div>                
+                </div>
+            </div>        
+       
+                </div>
+                
     <!-- Cafe Menu -->
     <div id="menu" class="parallax-window" data-parallax="scroll" data-image-src="img/antique-cafe-bg-02.jpg">
         <div class="container mx-auto tm-container py-24 sm:py-48">
@@ -67,30 +94,30 @@ https://www.tooplate.com/view/2126-antique-cafe
             <div class="flex flex-col lg:flex-row justify-around items-center">
                 <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
                     <div class="flex items-start justify-center mb-6 tm-menu-item">
-                        <img src="img/menu-item-1.jpg" alt="Image" class="rounded-md">                    
+                        <img src="img/menu-item-1.jpg" alt="Image" class="rounded-md" id="gallery1">                    
                     </div>
                     <div class="flex items-start justify-center mb-6 tm-menu-item">
-                        <img src="img/menu-item-2.jpg" alt="Image" class="rounded-md">                    
+                        <img src="img/menu-item-2.jpg" alt="Image" class="rounded-md" id="gallery2">                    
                     </div>
                     <div class="flex items-start justify-center mb-6 tm-menu-item">
-                        <img src="img/menu-item-3.jpg" alt="Image" class="rounded-md">                   
+                        <img src="img/menu-item-3.jpg" alt="Image" class="rounded-md" id="gallery3">                   
                     </div>
                     <div class="flex items-start justify-center mb-6 tm-menu-item">
-                        <img src="img/menu-item-4.jpg" alt="Image" class="rounded-md">                  
+                        <img src="img/menu-item-4.jpg" alt="Image" class="rounded-md" id="gallery4">                  
                     </div>
                 </div>
                 <div class="flex-1 m-5 rounded-xl px-4 py-6 sm:px-8 sm:py-10 tm-bg-brown tm-item-container">
                     <div class="flex items-start justify-center mb-6 tm-menu-item-2">
-                        <img src="img/menu-item-5.jpg" alt="Image" class="rounded-md">                   
+                        <img src="img/menu-item-5.jpg" alt="Image" class="rounded-md" id="gallery5">                   
                     </div>
                     <div class="flex items-start justify-center mb-6 tm-menu-item-2">
-                        <img src="img/menu-item-6.jpg" alt="Image" class="rounded-md">                    
+                        <img src="img/menu-item-6.jpg" alt="Image" class="rounded-md" id="gallery6">                    
                     </div>
                     <div class="flex items-start justify-center mb-6 tm-menu-item-2">  
-                        <img src="img/menu-item-7.jpg" alt="Image" class="rounded-md">                 
+                        <img src="img/menu-item-7.jpg" alt="Image" class="rounded-md" id="gallery7">                 
                     </div>
                     <div class="flex items-start justify-center mb-6 tm-menu-item-2">                    
-                        <img src="img/menu-item-8.jpg" alt="Image" class="rounded-md">                   
+                        <img src="img/menu-item-8.jpg" alt="Image" class="rounded-md" id="gallery8">                   
                     </div>
                 </div>
             </div>
@@ -102,14 +129,14 @@ https://www.tooplate.com/view/2126-antique-cafe
                 <div class="bg-white bg-opacity-80 p-12 pb-14 rounded-xl mb-5">
                     <h2 class="mb-6 tm-text-green text-4xl font-medium">Events</h2>
                     <p class="mb-6 text-base leading-8">
-                        Special title treatment
+                        Event Name
                   </p>
                     <p class="text-base leading-8">
-                        With supporting text below as a natural lead-in to additional content. </p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                        Event Date </p>
+                        <!-- <a href="#" class="far fa-link mr-4" style="background-color: aqua;"></a> -->
                 </div>
                 <a href="#contact" class="inline-block tm-bg-green transition text-white text-xl pt-3 pb-4 px-8 rounded-md">
-                    <i class="far fa-comments mr-4"></i>
+                    <i class="far fa-video mr-4">Preview</i>
                 </a>
             </div>           
         </div>        
@@ -123,8 +150,8 @@ https://www.tooplate.com/view/2126-antique-cafe
                         Address    
                     </p>
                     <p class="mb-10 text-lg">
-                        <span class="block mb-2">Tel: <a href="tel:0100200340" class="hover:text-yellow-600 transition">010-020-0340</a></span>
-                        <span class="block">Email: <a href="mailto:info@company.com" class="hover:text-yellow-600 transition">info@company.com</a></span>                        
+                        <span class="block mb-2" >Tel: <a href="tel:0100200340" class="hover:text-yellow-600 transition" id="phone-num">010-020-0340</a></span>
+                        <span class="block">Email: <a href="mailto:info@company.com" class="hover:text-yellow-600 transition" id="mail-id">info@company.com</a></span>                        
                     </p>
                     <div class="text-center">
                         <a href="https://www.google.com/maps" class="inline-block text-white text-2xl pl-10 pr-12 py-6 rounded-lg transition tm-bg-green">
